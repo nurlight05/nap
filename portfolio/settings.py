@@ -85,8 +85,12 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd3sqc29vqs1bi5',
+        'USER': 'jjafvzxgtfgykx',
+        'PASSWORD': '92c4078ba22bc1591efad1efd37e4e7ee2be211436b1c7d57cb70cd3773184e6',
+        'HOST': 'ec2-34-253-119-24.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -115,7 +119,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Almaty'
 
 USE_I18N = True
 
