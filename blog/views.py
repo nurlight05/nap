@@ -11,3 +11,15 @@ class ArticleDetailView(DetailView):
         context['latest_articles'] = Article.objects.all()[:5]
         context['tags'] = Tag.objects.all()
         return context
+    
+def showText(request):
+    if 'text' in request.GET:
+        text = request.GET['text']
+    else:
+        text = ''
+        
+    context = {
+        'text': text
+    }
+
+    return render(request, 'test/index.html', context)
