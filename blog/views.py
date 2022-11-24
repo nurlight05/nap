@@ -22,4 +22,4 @@ def showText(request):
         'text': text
     }
 
-    return render(request, 'test/index.html', context)
+    return render(request, 'test.html', context)
